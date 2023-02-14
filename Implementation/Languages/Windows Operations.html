@@ -1,0 +1,108 @@
+<html>
+			<head>
+                <link rel="stylesheet" href="Admission Form 1.css">
+							<script>
+								
+								document.body.style.color="white"
+								document.body.style.background="#9f81f7"
+
+
+                                        n1.onfocus=focus;
+                                        n1.onblur= blur ;
+                                        n1.focus();
+
+
+                                        function focus ()
+                                        {
+                                            this.value="";
+
+                                        }
+
+								 function cl()
+							    {
+										
+
+                                        var n1=document.getElementById("t1").value;
+                                        var n2=document.getElementById("t2").value;
+                                        var n3=document.getElementById("t3").value;
+                                       
+                                        var n5=document.getElementById("t6").value;
+                                        var n6=document.getElementById("t7").value;
+                                        var n7=document.getElementById("t8").value;
+                                 
+                                        var win= window.open("","Your Info","top=200,left=560,width=400,height=200,status");
+
+                                        win.document.write(" <b>Name : "+n1+"<br>");
+                                        win.document.write("Enrollment : "+n2+"<br>");
+                                        win.document.write("Roll : "+n3+"<br>");
+                                        win.document.write("Email : "+n5+"<br>");
+                                        win.document.write("Mo NO : "+n6+"<br>");
+                                        win.document.write("Last year Marks : "+n7+"<br></b>");
+
+                            
+                                        
+
+								 }
+                                 function close()
+                                 {
+                                    win.close()
+                                 }
+
+							</script>
+			</head>
+			<body >
+					<form>
+
+                        <div class="top">
+
+                        <h2 style="position: relative; top : 12px ; left : 30%"> Addmission Form  </h2>
+
+                        </div>
+
+<div class="main">
+
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Name  </h3>
+                        <input type="text" id="t1" style="position: relative; top : 50px ; left : 200px" > <br>
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Enrollment No   </h3>
+                        <input type="text" id="t2" style="position: relative; top : 50px ; left : 200px"  > <br>
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Roll No  </h3>
+                        <input type="text" id="t3"  style="position: relative; top : 50px ; left : 200px" > <br>
+
+                       
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Branch   </h3>   
+                        <div class="branch">
+                            <input type="radio" name="colors"  value="1" >Computer <br>
+                            <input type="radio" name="colors" value="2" >Mechanical <br>
+                            <input type="radio" name="colors" value="3" >Civil <br>
+                            <input type="radio" name="colors" value="4" >Plastic <br>
+                        </div>
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Email  </h3>  
+                        <input type="text" id="t6" style="position: relative; top : 50px ; left : 200px" > <br>
+
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your Mo No  </h3>
+                        <input type="text" id="t7" style="position: relative; top : 50px ; left : 200px" > <br>
+                        
+                        <h3 style="position: relative; top : 50px ; left : 100px">  Enter Your last year Marks </h3>
+                        <input type="text" id="t8" style="position: relative; top : 50px ; left : 200px" > <br>
+                       
+                           
+                            
+                            
+                            <input type="button" value="Submit" id="b1" onclick="cl()" style="position: relative; top : 65px ; left : 200px" >
+                            <input type="button" value="Reset" id="b1" onclick="close()" style="position: relative; top : 65px ; left : 250px" >
+                            
+                             
+                        
+         </div>
+
+						</form>
+
+
+
+			</body>
+</html>
